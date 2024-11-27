@@ -1,0 +1,258 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+
+  /* Estilização do Body */
+  body {
+    background-image: url(fundo2.jpeg);
+    padding: 20px;
+    background-size: cover;      /* Faz a imagem cobrir todo o fundo */
+      background-position: center; /* Centraliza a imagem */
+      background-repeat: no-repeat; 
+      background-attachment: fixed;/* mantem a imagem fixa para rolagem do site */
+      min-height: 100vh; /* Define altura mínima igual à altura da tela */
+  }
+  
+  /* Cabeçalho */
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+  }
+
+  .logo-container img {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.682); /* Sombra */
+    width: 70%;
+    border-radius: 10%; 
+  }
+
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  /* Seção de Projetos */
+  .projetos {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .projetos h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-radius: 25px;
+  }
+
+  .titulo-projetos, .titulo-serviços, .quem-sou-eu h2, .contato h2 {
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.682);
+    text-transform: uppercase;
+    display: inline-block; /* Faz o título ocupar apenas o espaço necessário */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+ 
+  
+  .projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  
+  .projetos-container img {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.645); /* Sombra suave */
+    border-radius: 10px; /* Arredonda os cantos */
+    transition: transform 0.3s ease; /* Transição suave */
+    width: 30%;
+    height: auto;
+  }
+
+  .projetos-container img:hover {
+    transform: translateY(-5px); /* Eleva a imagem no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+  }
+  
+  .btn-projetos {
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Arredonda as bordas */
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.682); /* Sombra */
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+    margin-top: 20px;
+  }
+  
+  .btn-projetos:hover {
+    background-color: #333; /* Cor ao passar o mouse */
+  }
+
+  a {
+    color: #bebbbb; /* Cinza médio */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
+  }
+  
+  a:hover {
+    color: #c5bbbb; /* Cinza escuro no hover */
+    text-decoration: underline; /* Opcional: sublinhado no hover */
+  }
+
+  /* Seçao Serviços*/
+
+  .serviços {
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .serviços h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-radius: 25px;
+  }
+  
+  .serviços-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  
+  .serviços-container img {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.645); /* Sombra suave */
+    border-radius: 25px; /* Arredonda os cantos */
+    transition: transform 0.3s ease; /* Transição suave */
+    width: 25%;
+    height: auto;
+  }
+
+  .serviços-container img:hover {
+    transform: translateY(-5px); /* Eleva a imagem no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+  }
+  
+  /* Seção Quem Sou Eu */
+  .quem-sou-eu {
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .perfil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    
+  }
+  
+  .foto-perfil {
+    width:300x;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.724);
+  }
+  
+  .perfil-container p {
+    max-width: 600px;
+    text-align: justify;
+    line-height: 1.4;
+  }
+
+
+.contato {
+  text-align: center;
+  align-items: center; /* Alinha os itens à esquerda */
+  gap: 5px; /* Espaço entre cada item de contato */
+}
+  .icone {
+    text-align: center;
+    width: 20px; /* Ajuste o tamanho do ícone */
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.682); /* Sombra */
+}
+ /* Centralizar a seção da galeria */
+.galeria {
+  text-align: center;
+  padding: 0px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.galeria h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Configurações do Grid para imagens coladas e centralizadas */
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 5px; /* Remove o espaço entre as imagens */
+  padding: 5px;
+}
+
+.galeria2 {
+  text-align: center;
+  padding: 0px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.galeria2-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 3 colunas */
+  gap: 5px; /* Remove o espaço entre as imagens */
+  padding: 5px;
+}
+
+/* Estilo das imagens para que fiquem coladas */
+.foto {
+  width: 100%;
+  height: auto;
+  display: grid; /* Remove espaços causados por imagens inline */
+  border-radius: 10px; /* Bordas arredondadas nas imagens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.foto:hover {
+  transform: scale(1.05); /* Aumenta levemente a imagem */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+}
+a:focus, .btn-projetos:focus {
+  outline: 2px solid #e8e4d5;
+} /*tornando os botoes acessiveis por teclado*/
