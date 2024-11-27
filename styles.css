@@ -256,3 +256,36 @@
 a:focus, .btn-projetos:focus {
   outline: 2px solid #e8e4d5;
 } /*tornando os botoes acessiveis por teclado*/
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 15px;
+  }
+
+  .logo-container img {
+    width: 50%;  /* Reduz a largura da imagem do logo em dispositivos móveis */
+  }
+
+  .foto-perfil {
+    width: 70%; /* Ajusta o tamanho da foto de perfil */
+    max-width: 200px; /* Limita o tamanho da foto */
+  }
+
+  .projetos-container,
+  .serviços-container {
+    flex-direction: column;  /* Empilha as imagens em uma coluna */
+    align-items: center;     /* Centraliza as imagens */
+  }
+
+  .projetos-container img,
+  .serviços-container img {
+    width: 80%;  /* Imagens vão ocupar 80% da largura em telas menores */
+    max-width: 250px; /* Limita o tamanho máximo das imagens */
+  }
+
+  .btn-projetos {
+    width: 100%; /* Faz o botão ocupar toda a largura */
+    padding: 10px; /* Ajusta o padding do botão */
+  }
+}
